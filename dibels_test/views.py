@@ -563,8 +563,7 @@ def gallery(request):
         "imagePathsAndNames" : imagePathsAndNames})
 
 def addData(request):
-    return HttpResponse("Data not downloaded")
-'''
+
     with open("words/6th grade.json", 'r') as f:
         data = json.load(f)
     f.close()
@@ -656,46 +655,6 @@ def addData(request):
                 gradeLevel = "Kindergarten"
             )
             imageObject.save()
-    
-    with open(f'words/2nd grade.txt','r') as file:
-        for line in file:
-            sentenceObject = Sentence(
-                body = line,
-                gradeLevel = "2nd grade"
-            )
-            sentenceObject.save()
-
-    with open(f'words/3rd grade.txt','r') as file:
-        for line in file:
-            sentenceObject = Sentence(
-                body = line,
-                gradeLevel = "3rd grade"
-            )
-            sentenceObject.save()
-
-    with open(f'words/4th grade.txt','r') as file:
-        for line in file:
-            sentenceObject = Sentence(
-                body = line,
-                gradeLevel = "4th grade"
-            )
-            sentenceObject.save()
-
-    with open(f'words/5th grade.txt','r') as file:
-        for line in file:
-            sentenceObject = Sentence(
-                body = line,
-                gradeLevel = "5th grade"
-            )
-            sentenceObject.save()
-
-    with open(f'words/6th grade.txt','r') as file:
-        for line in file:
-            sentenceObject = Sentence(
-                body = line,
-                gradeLevel = "6th grade"
-            )
-            sentenceObject.save()
  
     with open("temp2 copy.json", 'r') as f:
         data = json.load(f)
@@ -746,4 +705,5 @@ def addData(request):
             wide = font['attributes']['wide'],
         )
         fontObject.save()
-'''
+
+    return HttpResponse("Data  downloaded")
