@@ -563,6 +563,7 @@ def gallery(request):
         "imagePathsAndNames" : imagePathsAndNames})
 
 def addData(request):
+    return HttpResponse("Data not downloaded")
 '''
     with open("words/6th grade.json", 'r') as f:
         data = json.load(f)
@@ -695,7 +696,7 @@ def addData(request):
                 gradeLevel = "6th grade"
             )
             sentenceObject.save()
-    
+ 
     with open("temp2 copy.json", 'r') as f:
         data = json.load(f)
     f.close()
