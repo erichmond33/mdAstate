@@ -132,4 +132,4 @@ class queuedImageQuestion(models.Model):
     queuedImageSelection = models.CharField(max_length=50, default="null")
     queuedGeneratedWord1 = models.CharField(max_length=50, blank=True)
     queuedGeneratedWord2 = models.CharField(max_length=50, blank=True)
-    font = models.ForeignKey(Font, on_delete=models.CASCADE, default=160)
+    font = models.ForeignKey(Font, on_delete=models.CASCADE, default=134)
