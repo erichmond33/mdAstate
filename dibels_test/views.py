@@ -696,7 +696,7 @@ def addData(request):
                 gradeLevel = "6th grade"
             )
             sentenceObject.save()
-    
+ 
     with open("temp2 copy.json", 'r') as f:
         data = json.load(f)
     f.close()
