@@ -563,7 +563,7 @@ def gallery(request):
         "imagePathsAndNames" : imagePathsAndNames})
 
 def addData(request):
-
+'''
     with open("words/6th grade.json", 'r') as f:
         data = json.load(f)
     f.close()
@@ -745,3 +745,4 @@ def addData(request):
             wide = font['attributes']['wide'],
         )
         fontObject.save()
+'''
