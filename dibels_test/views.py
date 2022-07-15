@@ -230,7 +230,7 @@ def mazeGeneration(request, metadata_id):
                 POSITIVE_FEEBACK = generationHelpers.positiveFeedbackWithRandomnessAfterCorrectAnswer(False)
                 print("ERROR mazeGeneration: testObject.mazeQuestionAttempts.last().correct returned NULL")
             else:
-                POSITIVE_FEEBACK = generationHelpers.positiveFeedbackWithRandomnessAfterCorrectAnswer(testObject.mazeQuestionAttempts.last().correct)
+                POSITIVE_FEEBACK = generationHelpers.positiveFeedbackWithRandomnessAfterCorrectAnswer(True)
 
             # ---- selecting the question -----
             #selectedQuestion = allQuestions[len(testObject.mazeQuestionAttempts.all())]
@@ -656,7 +656,7 @@ def addData(request):
             )
             imageObject.save()
  
-    with open("temp2 copy.json", 'r') as f:
+    with open("fontsPlus15.json", 'r') as f:
         data = json.load(f)
     f.close()
 
