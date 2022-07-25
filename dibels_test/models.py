@@ -80,7 +80,7 @@ class mazeQuestionAttempt(models.Model):
 
 class mazeTest(models.Model):
     #user = models.ForeignKey("User", on_delete=models.CASCADE, related_name="userMaze", default="null")
-    testAdmin = models.CharField(max_length=50, default="null")
+    testAdmin = models.CharField(max_length=100, default="null")
     #examinee = models.CharField(max_length=50, default="null")
     gradeLevel = models.CharField(max_length=20, default="null")
     timestamp = models.DateTimeField(auto_now_add=True)
