@@ -124,6 +124,7 @@
   padding:0%;
   margin:0%;
   position: relative;
+  color: black;
 }
 #testContent {
   border: 1px transparent solid;
